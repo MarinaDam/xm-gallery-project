@@ -103,14 +103,7 @@ In order to ensure quality and reliable builds for the Angular 18 Gallery App, t
 - **Build Application**
 
   - Runs ng build --configuration=production to compile the Angular app for production deployment.
-
-- **Upload Artifacts**
-
-  - Saves the compiled build (dist/) as an artifact for later use or deployment.
-
-- **(Optional) Deployment**
-  - Automatically deploys the built app to hosting platforms like Firebase, GitHub Pages, or others, if configured.
-
+    
 ---
 
 ## License
