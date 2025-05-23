@@ -33,6 +33,12 @@ This project is a Gallery Web Application built with Angular 18, utilizing NgRx 
   - Unit tests with **Karma** and **Jasmine**
 
 ---
+### Requirements
+
+- **Node.js** version >= 18.19.0
+- **npm** (comes bundled with Node.js)
+
+---
 ### Installation
 
     # 1. Clone the project
