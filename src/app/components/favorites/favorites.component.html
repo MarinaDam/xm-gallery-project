@@ -1,0 +1,18 @@
+<div class="container main-container">
+  <div *ngIf="facade.showEmptyFavoritesMessage$ | async">
+    <mat-label>{{ facade.emptyFavoritesMessage$ | async }}</mat-label>
+  </div>
+  <div
+    class="row"
+    *ngIf="photosFacade.favoritePhotos$ | async as favoritePhotos"
+  >
+    <div
+      class="col-lg-3 col-md-6 col-12 mb-5 photo-card"
+      *ngFor="let photoUrl of favoritePhotos"
+    >
+      <div class="card photo-card-inner" (click)="goToPhotoDetails(photoUrl)">
+        <img [src]="photoUrl" class="card-img-top" />
+      </div>
+    </div>
+  </div>
+</div>

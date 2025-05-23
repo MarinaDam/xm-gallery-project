@@ -1,0 +1,16 @@
+<div class="container main-container" #scrollContainer (scroll)="onScroll()">
+  <div class="row">
+    <div
+      class="col-lg-3 col-md-6 col-12 mb-5 photo-card"
+      *ngFor="let photo of facade.photos$ | async; trackBy: trackByPhoto"
+    >
+      <div class="card photo-card-inner" (click)="addToFavorites(photo)">
+        <img [src]="photo" class="card-img-top" alt="Random photo" />
+      </div>
+    </div>
+  </div>
+
+  <div class="loader" *ngIf="facade.loading$ | async">
+    <mat-spinner diameter="50"></mat-spinner>
+  </div>
+</div>

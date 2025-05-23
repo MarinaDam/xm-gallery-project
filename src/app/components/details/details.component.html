@@ -1,0 +1,18 @@
+<div
+  class="main-container"
+  *ngIf="favoritesFacade.selectedPhotoUrl$ | async as photoUrl"
+>
+  <div class="photo-wrapper">
+    <img [src]="photoUrl" class="fullscreen-photo" alt="Selected photo" />
+  </div>
+
+  <div class="button-wrapper">
+    <button
+      mat-button
+      class="remove-button"
+      (click)="removeFromFavorites(photoUrl)"
+    >
+      Remove from favorites
+    </button>
+  </div>
+</div>
