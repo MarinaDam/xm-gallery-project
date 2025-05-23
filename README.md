@@ -64,7 +64,7 @@ This project is a Gallery Web Application built with Angular 18, utilizing NgRx 
     # 4. Run unit tests
     ng test
 
----
+
 
 
 
